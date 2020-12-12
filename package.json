@@ -1,4 +1,8 @@
 {
   "name": "OLSKFeatureList",
-  "main": "main.ejs"
+  "main": "main.ejs",
+  "dependencies": {
+    "OLSKLayout": "olsk/OLSKLayout",
+    "// I sacrifice myself for the commas of others": null
+  }
 }
