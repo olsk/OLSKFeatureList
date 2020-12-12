@@ -22,14 +22,14 @@ describe('OLSKFeatureList_Misc', function () {
 
 	});
 
-	describe('OLSKFeatureListItemImage', function test_OLSKFeatureListItemImage () {
+	describe('OLSKFeatureListItemIcon', function test_OLSKFeatureListItemIcon () {
 		
 		it('sets src', function () {
-			browser.assert.attribute(OLSKFeatureListItemImage, 'src', image_url);
+			browser.assert.attribute(OLSKFeatureListItemIcon, 'src', image_url);
 		});
 		
 		it('sets role', function () {
-			browser.assert.attribute(OLSKFeatureListItemImage, 'role', 'presentation');
+			browser.assert.attribute(OLSKFeatureListItemIcon, 'role', 'presentation');
 		});
 
 	});

@@ -4,7 +4,7 @@ Object.entries({
 	OLSKFeatureList: '.OLSKFeatureList',
 	
 	OLSKFeatureListItem: '.OLSKFeatureListItem',
-	OLSKFeatureListItemImage: '.OLSKFeatureListItemImage',
+	OLSKFeatureListItemIcon: '.OLSKFeatureListItemIcon',
 	OLSKFeatureListItemName: '.OLSKFeatureListItemName',
 	OLSKFeatureListItemBlurb: '.OLSKFeatureListItemBlurb',
 }).map(function (e) {
@@ -41,8 +41,8 @@ describe('OLSKFeatureList_Access', function () {
 			browser.assert.elements(OLSKFeatureListItem, count);
 		});
 
-		it('hides OLSKFeatureListItemImage', function () {
-			browser.assert.elements(OLSKFeatureListItemImage, 0);
+		it('hides OLSKFeatureListItemIcon', function () {
+			browser.assert.elements(OLSKFeatureListItemIcon, 0);
 		});
 
 		it('shows OLSKFeatureListItemName', function () {
@@ -63,8 +63,8 @@ describe('OLSKFeatureList_Access', function () {
 				});
 			});
 
-			it('shows OLSKFeatureListItemImage', function () {
-				browser.assert.elements(OLSKFeatureListItemImage, count);
+			it('shows OLSKFeatureListItemIcon', function () {
+				browser.assert.elements(OLSKFeatureListItemIcon, count);
 			});
 
 		});
