@@ -1,7 +1,7 @@
 <div class="OLSKFeatureList">
 
-<% OLSKFeatureListData.forEach(function ([name, blurb, image_url], i) { -%>
-	<div class="OLSKFeatureListItem OLSKCommonCard OLSKCommonFeatureCard">
+<% OLSKFeatureListData.forEach(function ([name, blurb, image_url, className], i) { -%>
+	<div class="OLSKFeatureListItem OLSKCommonCard OLSKCommonFeatureCard <%= className || '' %>">
 		<% if (image_url) { -%>
 			<img class="OLSKFeatureListItemIcon" src="<%= image_url %>" role="presentation" />
 		<% } -%>

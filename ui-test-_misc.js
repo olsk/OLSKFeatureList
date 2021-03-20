@@ -2,11 +2,11 @@ const kDefaultRoute = require('./controller.js').OLSKControllerRoutes().shift();
 
 describe('OLSKFeatureList_Misc', function () {
 
-	const [name, blurb, image_url] = [Math.random().toString(), Math.random().toString(), Math.random().toString()];
+	const [name, blurb, image_url, className] = [Math.random().toString(), Math.random().toString(), Math.random().toString(), Math.random().toString()];
 
 	before(function () {
 		return browser.OLSKVisit(kDefaultRoute, {
-			OLSKFeatureListData: JSON.stringify([[name, blurb, image_url]]),
+			OLSKFeatureListData: JSON.stringify([[name, blurb, image_url, className]]),
 		});
 	});
 
@@ -18,6 +18,10 @@ describe('OLSKFeatureList_Misc', function () {
 
 		it('classes OLSKCommonFeatureCard', function () {
 			browser.assert.hasClass(OLSKFeatureListItem, 'OLSKCommonFeatureCard');
+		});
+
+		it('classes className', function () {
+			browser.assert.hasClass(OLSKFeatureListItem, className);
 		});
 
 	});
