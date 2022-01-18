@@ -8,7 +8,7 @@ Object.entries({
 	OLSKFeatureListItemName: '.OLSKFeatureListItemName',
 	OLSKFeatureListItemBlurb: '.OLSKFeatureListItemBlurb',
 }).map(function (e) {
-	return global[e.shift()]  = e.pop();
+	return global[e.shift()] = e.pop();
 });
 
 describe('OLSKFeatureList_Access', function () {
