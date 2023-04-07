@@ -18,11 +18,11 @@ describe('OLSKFeatureList_Access', function () {
 	});
 	
 	it('shows OLSKFeatureList', function() {
-		browser.assert.elements(OLSKFeatureList, 1);
+		return browser.assert.elements(OLSKFeatureList, 1);
 	});
 
 	it('hides OLSKFeatureListItem', function () {
-		browser.assert.elements(OLSKFeatureListItem, 0);
+		return browser.assert.elements(OLSKFeatureListItem, 0);
 	});
 
 	context('OLSKFeatureListData', function () {
@@ -38,19 +38,19 @@ describe('OLSKFeatureList_Access', function () {
 		});
 
 		it('shows OLSKFeatureListItem', function () {
-			browser.assert.elements(OLSKFeatureListItem, count);
+			return browser.assert.elements(OLSKFeatureListItem, count);
 		});
 
 		it('hides OLSKFeatureListItemIcon', function () {
-			browser.assert.elements(OLSKFeatureListItemIcon, 0);
+			return browser.assert.elements(OLSKFeatureListItemIcon, 0);
 		});
 
 		it('shows OLSKFeatureListItemName', function () {
-			browser.assert.elements(OLSKFeatureListItemName, count);
+			return browser.assert.elements(OLSKFeatureListItemName, count);
 		});
 
 		it('shows OLSKFeatureListItemBlurb', function () {
-			browser.assert.elements(OLSKFeatureListItemBlurb, count);
+			return browser.assert.elements(OLSKFeatureListItemBlurb, count);
 		});
 
 		context('image_url', function () {
@@ -64,7 +64,7 @@ describe('OLSKFeatureList_Access', function () {
 			});
 
 			it('shows OLSKFeatureListItemIcon', function () {
-				browser.assert.elements(OLSKFeatureListItemIcon, count);
+				return browser.assert.elements(OLSKFeatureListItemIcon, count);
 			});
 
 		});

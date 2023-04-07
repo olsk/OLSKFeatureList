@@ -13,15 +13,15 @@ describe('OLSKFeatureList_Misc', function () {
 	describe('OLSKFeatureListItem', function test_OLSKFeatureListItem () {
 		
 		it('classes OLSKCommonCard', function () {
-			browser.assert.hasClass(OLSKFeatureListItem, 'OLSKCommonCard');
+			return browser.assert.hasClass(OLSKFeatureListItem, 'OLSKCommonCard');
 		});
 
 		it('classes OLSKCommonFeatureCard', function () {
-			browser.assert.hasClass(OLSKFeatureListItem, 'OLSKCommonFeatureCard');
+			return browser.assert.hasClass(OLSKFeatureListItem, 'OLSKCommonFeatureCard');
 		});
 
 		it('classes className', function () {
-			browser.assert.hasClass(OLSKFeatureListItem, className);
+			return browser.assert.hasClass(OLSKFeatureListItem, className);
 		});
 
 	});
@@ -29,11 +29,11 @@ describe('OLSKFeatureList_Misc', function () {
 	describe('OLSKFeatureListItemIcon', function test_OLSKFeatureListItemIcon () {
 		
 		it('sets src', function () {
-			browser.assert.attribute(OLSKFeatureListItemIcon, 'src', image_url);
+			return browser.assert.attribute(OLSKFeatureListItemIcon, 'src', image_url);
 		});
 		
 		it('sets role', function () {
-			browser.assert.attribute(OLSKFeatureListItemIcon, 'role', 'presentation');
+			return browser.assert.attribute(OLSKFeatureListItemIcon, 'role', 'presentation');
 		});
 
 	});
@@ -41,7 +41,7 @@ describe('OLSKFeatureList_Misc', function () {
 	describe('OLSKFeatureListItemName', function test_OLSKFeatureListItemName () {
 		
 		it('binds name', function () {
-			browser.assert.text(OLSKFeatureListItemName, name);
+			return browser.assert.text(OLSKFeatureListItemName, name);
 		});
 		
 	});
@@ -49,7 +49,7 @@ describe('OLSKFeatureList_Misc', function () {
 	describe('OLSKFeatureListItemBlurb', function test_OLSKFeatureListItemBlurb () {
 		
 		it('binds blurb', function () {
-			browser.assert.text(OLSKFeatureListItemBlurb, blurb);
+			return browser.assert.text(OLSKFeatureListItemBlurb, blurb);
 		});
 		
 	});
